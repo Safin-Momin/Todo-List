@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+      body {
+        font-family: "Poppins", sans-serif;
+      }
+
+      li {
+        background-color: rgb(241 245 249);
+        height: 3rem;
+        width: 100%;
+        border-radius: 0.5rem;
+        padding: 0 1rem;
+        font-weight: 600;
+        font-size: 1.125rem /* 18px */;
+        line-height: 1.75rem /* 28px */;
+        color: rgb(75 85 99);
+        margin: 0.5rem 0;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+      }
+
+      .btn-done {
+        text-decoration: line-through;
+        text-decoration-thickness: 4px;
+      }
+    </style>
+  </head>
+
+  <body class="bg-red-300">
+    <h1 class="font-semibold text-5xl my-10 flex justify-center text-gray-600">Todo App</h1>
+    <div class="flex justify-center">
+      <div class="w-4/5 min-h-[100px] max-w-[1200px] bg-slate-400 rounded-lg p-4 py-4">
+        <form class="form-todo">
+          <div class="flex justify-between gap-4 mt-4 mb-6">
+            <input
+              class="h-12 w-3/4 rounded-lg pl-4 border-none outline-none font-semibold text-lg text-gray-600 bg-slate-100 caret-red-300"
+              type="text"
+              placeholder="Add todo"
+            />
+            <input
+              class="w-1/4 bg-slate-100 h-12 rounded-lg font-semibold text-lg text-gray-600 active:bg-slate-200 border-none outline-none"
+              type="submit" value="Add"
+            >
+            </input>
+          </div>
+        </form>
+        <div class="w-full">
+          <div>
+            <ul class="flex flex-col todo-list">
+          
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
